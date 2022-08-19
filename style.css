@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+:root {
+    --bg-color: #eee;
+    --border-color: #aaa;
+    --body-color: #fff;
+    --font-color: #333;
+}
+
+.dark-theme {
+    --bg-color: #273340;
+    --border-color: rgb(66, 83, 100);
+    --body-color: #15202b;
+    --font-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DynaPuff', cursive;
+    background-color: var(--body-color);
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.container {
+    position: relative;
+}
+
+header nav i {
+    cursor: pointer;
+    color: var(--font-color);
+    transition: color 0.5s ease;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--bg-color);
+    top: 0;
+    transition: all 0.5s ease;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.5s ease;
+}
+
+header h2 {
+    letter-spacing: 5px;
+    color: var(--font-color);
+}
+
+main {
+    color: var(--font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: all 0.5s eases;
+}
+
+main article {
+    text-align: center;
+    padding: 1rem;
+}
+main article img {
+    width: 177px;
+    height: 177px;
+    border-radius: 30%;
+    box-shadow: rgb(0, 0, 0,0.3) 0 6px 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-bottom: 12px;
+}
+main article img:hover {
+     transform: scale(1.2);
+}
+
+main article p {
+    margin: 0.3rem 0;
+}
+
+main article p a {
+    color: var(--font-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.5s ease;
+
+}
+
+main article p a:hover {
+    color: var(--border-color);
+}
+
+main article ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.7rem;
+    list-style-type: none;
+}
+
+main article ul li a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: var(--font-color);
+    transition: all 0.5s ease;
+}
+
+main article ul li:hover a {
+    color: var(--border-color);
+}
+
+.newsletter a {
+    text-decoration: none;
+    color: var(--font-color);
+    display: block;
+    padding: 0.2rem;
+    transition: all 0.5s ease;
+}
+
+.newsletter a:hover {
+    color: var(--border-color);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--bg-color);
+    text-align: center;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+footer nav {
+    padding: 0.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+footer nav small {
+    font-size: 0.6rem;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+    color: var(--font-color);
+}
